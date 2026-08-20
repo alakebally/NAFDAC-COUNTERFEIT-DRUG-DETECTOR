@@ -9,7 +9,7 @@ from pathlib import Path
 # --- Configuration: Point to Google Drive Artifacts --- #
 # This path must match where the artifacts were saved on Google Drive
 # Assumes Google Drive is mounted at /content/drive
-ARTIFACT_DIR = Path("/content/drive/MyDrive/NAFDAC_Drug_Detector/artifacts")
+ARTIFACT_DIR = ARTIFACT_DIR = Path(__file__).parent / "artifacts"
 
 # --- Load Artifacts (Model, Metadata, Lookup Data) --- #
 @st.cache_resource
