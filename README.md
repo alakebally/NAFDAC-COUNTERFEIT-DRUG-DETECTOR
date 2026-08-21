@@ -510,7 +510,8 @@ The exported reference data contains **7,503 Greenbook records**.
 
 ## 📁 Project Structure
 
-NAFDAC-Counterfeit-Drug-Detector/
+```text
+NAFDAC-COUNTERFEIT-DRUG-DETECTOR/
 │
 ├── artifacts/                         # Model and reference data artifacts
 │   ├── greenbook_lookup.csv           # NAFDAC Greenbook lookup data
@@ -532,19 +533,15 @@ NAFDAC-Counterfeit-Drug-Detector/
 
 ### 1. Clone the repository
 
+```bash
 git clone https://github.com/alakebally/NAFDAC-COUNTERFEIT-DRUG-DETECTOR.git
 cd NAFDAC-COUNTERFEIT-DRUG-DETECTOR
+```
 
 ### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
-```
-
-If a `requirements.txt` file is not available, install the core dependencies:
-
-```bash
-pip install pandas numpy scikit-learn requests beautifulsoup4 matplotlib seaborn joblib streamlit
 ```
 
 ### 3. Run the Streamlit application
