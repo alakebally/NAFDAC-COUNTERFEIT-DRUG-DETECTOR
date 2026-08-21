@@ -16,6 +16,24 @@
 The application is deployed with Streamlit and provides a user-facing interface for checking NAFDAC registration numbers and identifying potentially suspicious drug products.
 
 ---
+## 🎥 Project Demonstration
+
+Watch the 3-minutes Video demonstration here
+
+
+[[(https://drive.google.com/file/d/1TMy7B9494CMHTfSQ39m_CJj_pg6uWpDV/view?usp=drive_link)]
+```
+
+The demonstration should show:
+
+1. Opening the deployed application
+2. Entering a NAFDAC number
+3. Performing the verification
+4. Displaying the verdict
+5. Showing the explanation
+6. Demonstrating an active/inactive or mismatch case
+7. Demonstrating an NAFDAC number that is not found in the Greenbook
+
 
 ## 📌 Project Overview
 
@@ -492,36 +510,21 @@ The exported reference data contains **7,503 Greenbook records**.
 
 ## 📁 Project Structure
 
-A recommended repository structure is:
-
-```text
-NAFDAC-Drug-Detector/
+NAFDAC-Counterfeit-Drug-Detector/
 │
-├── README.md
-├── requirements.txt
+├── artifacts/                         # Model and reference data artifacts
+│   ├── greenbook_lookup.csv           # NAFDAC Greenbook lookup data
+│   ├── nafdac_metadata.joblib         # Model metadata
+│   └── nafdac_model.joblib            # Trained ML model
 │
-├── notebooks/
-│   └── nafdac_drug_detector.ipynb
+├── nafdac_drug_detector.ipynb         # Data analysis, preprocessing, feature engineering,
+│                                      # model training and evaluation
 │
-├── data/
-│   └── README.md
+├── README.md                           # Project documentation
 │
-├── artifacts/
-│   ├── nafdac_model.joblib
-│   ├── nafdac_metadata.joblib
-│   └── greenbook_lookup.csv
+├── app.py                              # Streamlit application
 │
-├── src/
-│   ├── preprocessing.py
-│   ├── lookup.py
-│   ├── feature_engineering.py
-│   └── prediction.py
-│
-└── app/
-    └── app.py
-```
-
-Adjust the structure above to match the actual files committed to the repository.
+└── requirements.txt                    # Python dependencies
 
 ---
 
@@ -529,10 +532,8 @@ Adjust the structure above to match the actual files committed to the repository
 
 ### 1. Clone the repository
 
-```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd NAFDAC-Drug-Detector
-```
+git clone https://github.com/alakebally/NAFDAC-COUNTERFEIT-DRUG-DETECTOR.git
+cd NAFDAC-COUNTERFEIT-DRUG-DETECTOR
 
 ### 2. Install dependencies
 
@@ -627,27 +628,6 @@ Future versions of the project can include:
 - [ ] Expand the Streamlit application with additional product verification features
 - [ ] Develop a mobile-friendly version
 
----
-
-## 🎥 Project Demonstration
-
-A short demonstration video can be found here:
-
-
-[[(https://drive.google.com/file/d/1TMy7B9494CMHTfSQ39m_CJj_pg6uWpDV/view?usp=drive_link)]
-```
-
-The demonstration should show:
-
-1. Opening the deployed application
-2. Entering a NAFDAC number
-3. Performing the verification
-4. Displaying the verdict
-5. Showing the explanation
-6. Demonstrating an active/inactive or mismatch case
-7. Demonstrating an NAFDAC number that is not found in the Greenbook
-
----
 
 ## 📌 Key Takeaway
 
