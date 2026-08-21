@@ -21,7 +21,7 @@ The application is deployed with Streamlit and provides a user-facing interface 
 Watch the 3-minutes Video demonstration here
 
 
-[[(https://drive.google.com/file/d/1TMy7B9494CMHTfSQ39m_CJj_pg6uWpDV/view?usp=drive_link)]
+[(https://drive.google.com/file/d/1TMy7B9494CMHTfSQ39m_CJj_pg6uWpDV/view?usp=drive_link)]
 ```
 
 The demonstration should show:
